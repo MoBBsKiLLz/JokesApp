@@ -15,7 +15,7 @@ ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
 
-$keywordfromform = addslashes($_GET['keyword'])C;
+$keywordfromform = addslashes($_GET['keyword']);
 echo $keywordfromform;
 
 echo "<h2>Show all jokes with the word " . $keywordfromform . "</h2>";
