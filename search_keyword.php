@@ -20,7 +20,7 @@ echo $keywordfromform;
 
 echo "<h2>Show all jokes with the word " . $keywordfromform . "</h2>";
 
-$sql = "SELECT JokeID, Joke_question, Joke_answer, users.user_id, users.user_name FROM Jokes_table JOIN users ON users.user_id WHERE Joke_question LIKE '%$keywordfromform%'";
+$sql = "SELECT JokeID, Joke_question, Joke_answer, users.user_id, users.user_name FROM jokes_table JOIN users ON users.user_id WHERE Joke_question LIKE '%$keywordfromform%'";
 
 echo "SQL Statement = " . $sql . "<br>";
 
